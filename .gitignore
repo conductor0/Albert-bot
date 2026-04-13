@@ -1,0 +1,10 @@
+.env
+imagens_Comum/*
+imagens_Incomum/*
+imagens_Raro/*
+imagens_Epico/*
+imagens_Lendario/*
+imagens_Mitico/*
+images_temp/*
+pfps
+discord.log
