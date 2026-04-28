@@ -96,6 +96,9 @@ async def on_voice_state_update(member, before, after):
     vc = await after.channel.connect()
     vc.play(discord.FFmpegPCMAudio('biguy.mp3'), after=lambda e: print('done'))
     increment("dolly_join")
+    await asyncio.sleep(10)
+    await vc.disconnect()
+    
     
   if after.self_mute and member.id == 377958153494724618:
     channel = bot.get_channel(865599468954058755)
